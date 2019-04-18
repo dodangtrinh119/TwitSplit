@@ -11,11 +11,17 @@ import SkyFloatingLabelTextField
 import RxSwift
 import RxCocoa
 
+protocol splitMessageDelegate {
+    func afterSplitSuccess(result: [String])
+}
+
+
 class PostMessageViewController: UIViewController {
     
     @IBOutlet var usernameTextField: SkyFloatingLabelTextField!
     @IBOutlet var messageTextField: UITextView!
     var viewModel = PostMessageViewModel(split: TwitSplitZalora())
+    var delegate: splitMessageDelegate!
     fileprivate var disposeBag = DisposeBag()
     private var doneButton = UIBarButtonItem(title: "Add", style: .done, target: self, action: nil)
     
@@ -36,20 +42,39 @@ class PostMessageViewController: UIViewController {
         }.disposed(by: disposeBag)
         viewModel.splitResult.subscribe(onNext: { [weak self] (result) in
             if result.errorMessage != nil {
-                //display error
+                let alert = UIAlertController(title: "Split Error", message: result.errorMessage, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                self?.present(alert, animated: true, completion: nil)
             }
             else {
-                //return values
+                self?.delegate.afterSplitSuccess(result: result.result)
+                self?.dismiss(animated: true, completion: nil)
                 print(result.result)
             }
         }).disposed(by: disposeBag)
     }
-    
-    
-    
+
     func setupView() {
+        messageTextField.text = "Placeholder"
+        messageTextField.textColor = UIColor.lightGray
         self.navigationItem.rightBarButtonItem = doneButton
     }
     
     
+}
+
+extension PostMessageViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Placeholder"
+            textView.textColor = UIColor.lightGray
+        }
+    }
 }

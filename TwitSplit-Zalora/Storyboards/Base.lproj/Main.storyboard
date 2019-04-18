@@ -58,20 +58,26 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Username"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Username"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rZC-RV-XGc">
-                                <rect key="frame" x="16" y="147.5" width="382" height="699.5"/>
+                                <rect key="frame" x="11" y="147.5" width="392" height="699.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Zax-r2-Sqr" id="ZdJ-hF-VsU"/>
+                                </connections>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9iy-WE-Dvr" firstAttribute="top" secondItem="cPi-6f-FLB" secondAttribute="top" constant="10" id="Eca-JM-nte"/>
-                            <constraint firstItem="rZC-RV-XGc" firstAttribute="leading" secondItem="cPi-6f-FLB" secondAttribute="leading" constant="16" id="VKS-D3-uFI"/>
-                            <constraint firstItem="cPi-6f-FLB" firstAttribute="trailing" secondItem="rZC-RV-XGc" secondAttribute="trailing" constant="16" id="XJS-BT-QCg"/>
+                            <constraint firstItem="rZC-RV-XGc" firstAttribute="leading" secondItem="cPi-6f-FLB" secondAttribute="leading" constant="11" id="VKS-D3-uFI"/>
+                            <constraint firstItem="cPi-6f-FLB" firstAttribute="trailing" secondItem="rZC-RV-XGc" secondAttribute="trailing" constant="11" id="XJS-BT-QCg"/>
                             <constraint firstItem="cPi-6f-FLB" firstAttribute="bottom" secondItem="rZC-RV-XGc" secondAttribute="bottom" constant="15" id="bR3-67-z5T"/>
                             <constraint firstItem="rZC-RV-XGc" firstAttribute="top" secondItem="9iy-WE-Dvr" secondAttribute="bottom" constant="10" id="fqd-US-GyD"/>
                             <constraint firstItem="9iy-WE-Dvr" firstAttribute="leading" secondItem="cPi-6f-FLB" secondAttribute="leading" constant="16" id="jrR-6S-K5Q"/>
