@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456BBF914BA8B2BF6303A41F /* Pods_TwitSplit_ZaloraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D0AEDE2A88EBE72C4FF811 /* Pods_TwitSplit_ZaloraUITests.framework */; };
 		4A17264822677414009BF28C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A17264722677414009BF28C /* AppDelegate.swift */; };
 		4A17264A22677414009BF28C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A17264922677414009BF28C /* ViewController.swift */; };
 		4A17264D22677414009BF28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A17264B22677414009BF28C /* Main.storyboard */; };
@@ -16,6 +17,11 @@
 		4A17266822677416009BF28C /* TwitSplit_ZaloraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A17266722677416009BF28C /* TwitSplit_ZaloraUITests.swift */; };
 		4A17267722677599009BF28C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A17267622677599009BF28C /* Constants.swift */; };
 		4A172679226775B0009BF28C /* TwitSplitStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A172678226775B0009BF28C /* TwitSplitStrategy.swift */; };
+		4AC3893222688E1400E0ABEB /* PostMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3893122688E1400E0ABEB /* PostMessageViewModel.swift */; };
+		4AC3893422688E5500E0ABEB /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3893322688E5500E0ABEB /* MessageModel.swift */; };
+		4AC3893822689CF800E0ABEB /* PostMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3893722689CF800E0ABEB /* PostMessagesViewController.swift */; };
+		72A2DF84E991AD0811B8E571 /* Pods_TwitSplit_Zalora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FA04FA677BC749B9E56F66 /* Pods_TwitSplit_Zalora.framework */; };
+		CBD55A6BC00FEE2CFEA25225 /* Pods_TwitSplit_ZaloraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B638AC8025E638FD0E12411 /* Pods_TwitSplit_ZaloraTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C1CD0EDD337030509B0AADF /* Pods-TwitSplit-ZaloraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit-ZaloraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit-ZaloraUITests/Pods-TwitSplit-ZaloraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1CD0D33C413B7F6F876ADDCE /* Pods-TwitSplit-ZaloraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit-ZaloraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit-ZaloraTests/Pods-TwitSplit-ZaloraTests.release.xcconfig"; sourceTree = "<group>"; };
+		27D1E68251593D9DCF5470B2 /* Pods-TwitSplit-Zalora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit-Zalora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit-Zalora/Pods-TwitSplit-Zalora.debug.xcconfig"; sourceTree = "<group>"; };
+		41C0473F61D89FA73157EE4E /* Pods-TwitSplit-ZaloraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit-ZaloraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit-ZaloraTests/Pods-TwitSplit-ZaloraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A17264422677414009BF28C /* TwitSplit-Zalora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TwitSplit-Zalora.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A17264722677414009BF28C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A17264922677414009BF28C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +61,14 @@
 		4A17266922677416009BF28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A17267622677599009BF28C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A172678226775B0009BF28C /* TwitSplitStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitSplitStrategy.swift; sourceTree = "<group>"; };
+		4AC3893122688E1400E0ABEB /* PostMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageViewModel.swift; sourceTree = "<group>"; };
+		4AC3893322688E5500E0ABEB /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		4AC3893722689CF800E0ABEB /* PostMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostMessagesViewController.swift; sourceTree = "<group>"; };
+		5B638AC8025E638FD0E12411 /* Pods_TwitSplit_ZaloraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitSplit_ZaloraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FA04FA677BC749B9E56F66 /* Pods_TwitSplit_Zalora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitSplit_Zalora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF0D89A0CDC640AB75E9F21 /* Pods-TwitSplit-Zalora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit-Zalora.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit-Zalora/Pods-TwitSplit-Zalora.release.xcconfig"; sourceTree = "<group>"; };
+		C4D0AEDE2A88EBE72C4FF811 /* Pods_TwitSplit_ZaloraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitSplit_ZaloraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C17837522BB210095CF6FC /* Pods-TwitSplit-ZaloraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit-ZaloraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit-ZaloraUITests/Pods-TwitSplit-ZaloraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A2DF84E991AD0811B8E571 /* Pods_TwitSplit_Zalora.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD55A6BC00FEE2CFEA25225 /* Pods_TwitSplit_ZaloraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456BBF914BA8B2BF6303A41F /* Pods_TwitSplit_ZaloraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +106,8 @@
 				4A17265B22677416009BF28C /* TwitSplit-ZaloraTests */,
 				4A17266622677416009BF28C /* TwitSplit-ZaloraUITests */,
 				4A17264522677414009BF28C /* Products */,
+				A8605F64728F0E5160A8501D /* Pods */,
+				632EF36E035388DE04B11E52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +228,7 @@
 		4AE270EE2267AC93006AEDBF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4AC3893122688E1400E0ABEB /* PostMessageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -212,6 +236,7 @@
 		4AE270EF2267AC98006AEDBF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4AC3893722689CF800E0ABEB /* PostMessagesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,6 +244,7 @@
 		4AE270F02267AC9E006AEDBF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4AC3893322688E5500E0ABEB /* MessageModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +277,29 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		632EF36E035388DE04B11E52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79FA04FA677BC749B9E56F66 /* Pods_TwitSplit_Zalora.framework */,
+				5B638AC8025E638FD0E12411 /* Pods_TwitSplit_ZaloraTests.framework */,
+				C4D0AEDE2A88EBE72C4FF811 /* Pods_TwitSplit_ZaloraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8605F64728F0E5160A8501D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27D1E68251593D9DCF5470B2 /* Pods-TwitSplit-Zalora.debug.xcconfig */,
+				9CF0D89A0CDC640AB75E9F21 /* Pods-TwitSplit-Zalora.release.xcconfig */,
+				41C0473F61D89FA73157EE4E /* Pods-TwitSplit-ZaloraTests.debug.xcconfig */,
+				1CD0D33C413B7F6F876ADDCE /* Pods-TwitSplit-ZaloraTests.release.xcconfig */,
+				F2C17837522BB210095CF6FC /* Pods-TwitSplit-ZaloraUITests.debug.xcconfig */,
+				0C1CD0EDD337030509B0AADF /* Pods-TwitSplit-ZaloraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A17266C22677416009BF28C /* Build configuration list for PBXNativeTarget "TwitSplit-Zalora" */;
 			buildPhases = (
+				190B8AC66615F20AB46FE653 /* [CP] Check Pods Manifest.lock */,
 				4A17264022677414009BF28C /* Sources */,
 				4A17264122677414009BF28C /* Frameworks */,
 				4A17264222677414009BF28C /* Resources */,
+				9773B787FEF3F2C15FDBEB98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +326,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A17266F22677416009BF28C /* Build configuration list for PBXNativeTarget "TwitSplit-ZaloraTests" */;
 			buildPhases = (
+				D21B42D236F4E0CAAB5581A7 /* [CP] Check Pods Manifest.lock */,
 				4A17265422677416009BF28C /* Sources */,
 				4A17265522677416009BF28C /* Frameworks */,
 				4A17265622677416009BF28C /* Resources */,
@@ -293,6 +345,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A17267222677416009BF28C /* Build configuration list for PBXNativeTarget "TwitSplit-ZaloraUITests" */;
 			buildPhases = (
+				5A17F877E58FDDA31B5D22B7 /* [CP] Check Pods Manifest.lock */,
 				4A17265F22677416009BF28C /* Sources */,
 				4A17266022677416009BF28C /* Frameworks */,
 				4A17266122677416009BF28C /* Resources */,
@@ -377,14 +430,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		190B8AC66615F20AB46FE653 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitSplit-Zalora-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A17F877E58FDDA31B5D22B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitSplit-ZaloraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9773B787FEF3F2C15FDBEB98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwitSplit-Zalora/Pods-TwitSplit-Zalora-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitSplit-Zalora/Pods-TwitSplit-Zalora-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D21B42D236F4E0CAAB5581A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitSplit-ZaloraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A17264022677414009BF28C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4A17264A22677414009BF28C /* ViewController.swift in Sources */,
+				4AC3893422688E5500E0ABEB /* MessageModel.swift in Sources */,
+				4AC3893822689CF800E0ABEB /* PostMessagesViewController.swift in Sources */,
 				4A17264822677414009BF28C /* AppDelegate.swift in Sources */,
 				4A17267722677599009BF28C /* Constants.swift in Sources */,
+				4AC3893222688E1400E0ABEB /* PostMessageViewModel.swift in Sources */,
 				4A172679226775B0009BF28C /* TwitSplitStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,6 +711,7 @@
 		};
 		4A17266D22677416009BF28C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D1E68251593D9DCF5470B2 /* Pods-TwitSplit-Zalora.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,13 +722,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "None.TwitSplit-Zalora";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		4A17266E22677416009BF28C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF0D89A0CDC640AB75E9F21 /* Pods-TwitSplit-Zalora.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,13 +740,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "None.TwitSplit-Zalora";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		4A17267022677416009BF28C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C0473F61D89FA73157EE4E /* Pods-TwitSplit-ZaloraTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -612,6 +768,7 @@
 		};
 		4A17267122677416009BF28C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD0D33C413B7F6F876ADDCE /* Pods-TwitSplit-ZaloraTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -632,6 +789,7 @@
 		};
 		4A17267322677416009BF28C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C17837522BB210095CF6FC /* Pods-TwitSplit-ZaloraUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -651,6 +809,7 @@
 		};
 		4A17267422677416009BF28C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1CD0EDD337030509B0AADF /* Pods-TwitSplit-ZaloraUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
