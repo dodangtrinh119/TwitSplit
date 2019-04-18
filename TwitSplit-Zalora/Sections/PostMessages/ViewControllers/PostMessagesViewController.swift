@@ -15,7 +15,7 @@ class PostMessageViewController: UIViewController {
     
     @IBOutlet var usernameTextField: SkyFloatingLabelTextField!
     @IBOutlet var messageTextField: UITextView!
-    var viewModel = PostMessageViewModel()
+    var viewModel = PostMessageViewModel(split: TwitSplitZalora())
     fileprivate var disposeBag = DisposeBag()
     private var doneButton = UIBarButtonItem(title: "Add", style: .done, target: self, action: nil)
     
@@ -32,8 +32,17 @@ class PostMessageViewController: UIViewController {
             .bind(to: doneButton.rx.isEnabled)
             .disposed(by: disposeBag)
         doneButton.rx.tap.bind {
-            print("ABCD")
+            self.viewModel.splitMessage()
         }.disposed(by: disposeBag)
+        viewModel.splitResult.subscribe(onNext: { [weak self] (result) in
+            if result.errorMessage != nil {
+                //display error
+            }
+            else {
+                //return values
+                print(result.result)
+            }
+        }).disposed(by: disposeBag)
     }
     
     

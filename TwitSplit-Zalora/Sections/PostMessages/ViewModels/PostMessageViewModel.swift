@@ -16,6 +16,8 @@ class PostMessageViewModel {
     var username = Variable<String>("")
     var message = Variable<String>("")
     let isValid: Observable<Bool>
+    var splitResult = PublishSubject<TwitSplitResult>()
+    
     private var splitter: TwitSplitStrategy
     
     init(split: TwitSplitStrategy) {
@@ -33,14 +35,9 @@ class PostMessageViewModel {
     }
     
     func splitMessage() {
-        let splitResult = splitter.splitMessage(message: message.value, limit: LIMIT_CHAR_IN_WORD)
-        //split has error
-        if splitResult.errorMessage != nil {
-            let alert = UIAlertController(title: "Slit error", message: splitResult.errorMessage, preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            //self.present(alert, animated: true, completion: nil)
-            return
-        }
+        print("ABCDDDD")
+        splitResult.onNext(splitter.splitMessage(message: message.value, limit: LIMIT_CHAR_IN_WORD))
+        print(splitResult)
     }
     
     
