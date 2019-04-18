@@ -7,3 +7,5 @@
 //
 
 import Foundation
+
+let LIMIT_CHAR_IN_WORD: Int = 50
