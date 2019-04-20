@@ -26,18 +26,31 @@
             </objects>
             <point key="canvasLocation" x="-626" y="-324"/>
         </scene>
-        <!--View Controller-->
+        <!--Timelines View Controller-->
         <scene sceneID="i80-zm-QWn">
             <objects>
-                <viewController id="qMd-23-yLi" customClass="ViewController" customModule="TwitSplit_Zalora" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qMd-23-yLi" customClass="TimelinesViewController" customModule="TwitSplit_Zalora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TAw-9v-rLd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vho-Oy-8MK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vho-Oy-8MK" firstAttribute="top" secondItem="ZDP-u3-9sS" secondAttribute="top" id="Pfh-VP-hBu"/>
+                            <constraint firstItem="vho-Oy-8MK" firstAttribute="leading" secondItem="ZDP-u3-9sS" secondAttribute="leading" id="nSe-EE-tVG"/>
+                            <constraint firstItem="ZDP-u3-9sS" firstAttribute="bottom" secondItem="vho-Oy-8MK" secondAttribute="bottom" id="q2F-n5-0Nk"/>
+                            <constraint firstItem="ZDP-u3-9sS" firstAttribute="trailing" secondItem="vho-Oy-8MK" secondAttribute="trailing" id="wMe-2r-Hxo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZDP-u3-9sS"/>
                     </view>
                     <navigationItem key="navigationItem" id="0cE-CP-cvd"/>
                     <connections>
+                        <outlet property="tableView" destination="vho-Oy-8MK" id="NKT-Bk-Zzx"/>
                         <segue destination="Zax-r2-Sqr" kind="show" identifier="showAddMessage" id="xkQ-Mz-E8Q"/>
                     </connections>
                 </viewController>

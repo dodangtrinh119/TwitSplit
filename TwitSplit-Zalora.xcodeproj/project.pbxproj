@@ -21,6 +21,9 @@
 		4AC3893422688E5500E0ABEB /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3893322688E5500E0ABEB /* MessageModel.swift */; };
 		4AC3893822689CF800E0ABEB /* PostMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3893722689CF800E0ABEB /* PostMessagesViewController.swift */; };
 		4AC3893A2268B39C00E0ABEB /* TimelinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC389392268B39C00E0ABEB /* TimelinesViewController.swift */; };
+		4AC3893C2268DF7700E0ABEB /* TimelinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3893B2268DF7700E0ABEB /* TimelinesViewModel.swift */; };
+		4AC3893E2268DFC300E0ABEB /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC3893D2268DFC300E0ABEB /* PostTableViewCell.xib */; };
+		4AC389402268E08E00E0ABEB /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3893F2268E08E00E0ABEB /* PostTableViewCell.swift */; };
 		72A2DF84E991AD0811B8E571 /* Pods_TwitSplit_Zalora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FA04FA677BC749B9E56F66 /* Pods_TwitSplit_Zalora.framework */; };
 		CBD55A6BC00FEE2CFEA25225 /* Pods_TwitSplit_ZaloraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B638AC8025E638FD0E12411 /* Pods_TwitSplit_ZaloraTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +69,9 @@
 		4AC3893322688E5500E0ABEB /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		4AC3893722689CF800E0ABEB /* PostMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostMessagesViewController.swift; sourceTree = "<group>"; };
 		4AC389392268B39C00E0ABEB /* TimelinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinesViewController.swift; sourceTree = "<group>"; };
+		4AC3893B2268DF7700E0ABEB /* TimelinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinesViewModel.swift; sourceTree = "<group>"; };
+		4AC3893D2268DFC300E0ABEB /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		4AC3893F2268E08E00E0ABEB /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		5B638AC8025E638FD0E12411 /* Pods_TwitSplit_ZaloraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitSplit_ZaloraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FA04FA677BC749B9E56F66 /* Pods_TwitSplit_Zalora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitSplit_Zalora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF0D89A0CDC640AB75E9F21 /* Pods-TwitSplit-Zalora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit-Zalora.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit-Zalora/Pods-TwitSplit-Zalora.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,7 +252,6 @@
 		4AE270F02267AC9E006AEDBF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4AC3893322688E5500E0ABEB /* MessageModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 		4AE270F12267ACA4006AEDBF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4AC3893322688E5500E0ABEB /* MessageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 		4AE270F22267ACA9006AEDBF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4AC3893B2268DF7700E0ABEB /* TimelinesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -276,6 +283,8 @@
 		4AE270F42267ACBA006AEDBF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4AC3893D2268DFC300E0ABEB /* PostTableViewCell.xib */,
+				4AC3893F2268E08E00E0ABEB /* PostTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -414,6 +423,7 @@
 				4A17265222677416009BF28C /* LaunchScreen.storyboard in Resources */,
 				4A17264F22677416009BF28C /* Assets.xcassets in Resources */,
 				4A17264D22677414009BF28C /* Main.storyboard in Resources */,
+				4AC3893E2268DFC300E0ABEB /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +550,9 @@
 				4AC3893422688E5500E0ABEB /* MessageModel.swift in Sources */,
 				4AC3893822689CF800E0ABEB /* PostMessagesViewController.swift in Sources */,
 				4A17264822677414009BF28C /* AppDelegate.swift in Sources */,
+				4AC3893C2268DF7700E0ABEB /* TimelinesViewModel.swift in Sources */,
 				4A17267722677599009BF28C /* Constants.swift in Sources */,
+				4AC389402268E08E00E0ABEB /* PostTableViewCell.swift in Sources */,
 				4AC3893222688E1400E0ABEB /* PostMessageViewModel.swift in Sources */,
 				4A172679226775B0009BF28C /* TwitSplitStrategy.swift in Sources */,
 			);

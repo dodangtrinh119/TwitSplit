@@ -11,8 +11,12 @@ import UIKit
 struct MessageModel {
 
     var username: String
-    var displayName: String
     var message: String
-    var messageSplit: [String]
+    //var timePost: Date
+    
+    init(usr: String, mes: String) {
+        username = usr
+        message = mes
+    }
     
 }

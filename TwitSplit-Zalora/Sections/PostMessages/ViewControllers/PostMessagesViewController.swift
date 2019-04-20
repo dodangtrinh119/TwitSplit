@@ -11,8 +11,8 @@ import SkyFloatingLabelTextField
 import RxSwift
 import RxCocoa
 
-protocol splitMessageDelegate {
-    func afterSplitSuccess(result: [String])
+protocol SplitMessageDelegate {
+    func afterSplitSuccess(result: [String], username: String)
 }
 
 
@@ -21,7 +21,7 @@ class PostMessageViewController: UIViewController {
     @IBOutlet var usernameTextField: SkyFloatingLabelTextField!
     @IBOutlet var messageTextField: UITextView!
     var viewModel = PostMessageViewModel(split: TwitSplitZalora())
-    var delegate: splitMessageDelegate!
+    var delegate: SplitMessageDelegate!
     fileprivate var disposeBag = DisposeBag()
     private var doneButton = UIBarButtonItem(title: "Add", style: .done, target: self, action: nil)
     
@@ -47,7 +47,7 @@ class PostMessageViewController: UIViewController {
                 self?.present(alert, animated: true, completion: nil)
             }
             else {
-                self?.delegate.afterSplitSuccess(result: result.result)
+                self?.delegate.afterSplitSuccess(result: result.result, username: (self?.viewModel.username.value)!)
                 self?.dismiss(animated: true, completion: nil)
                 print(result.result)
             }
