@@ -14,14 +14,6 @@ class TimelinesViewModel: SplitMessageDelegate {
     
     private let disposeBag = DisposeBag()
     fileprivate(set) var postDataSource = Variable([MessageModel]())
-    fileprivate(set) var isLoadingAnimation = PublishSubject<Bool>()
-
-    func setData() {
-//        for i in 0...5 {
-//            var temp = MessageModel(usr: (i+10).description, mes: "AVXSD" + (i).description)
-//            postDataSource.value.append(temp)
-//        }
-    }
     
     func afterSplitSuccess(result: [String], username: String) {
         var newData = [MessageModel]()

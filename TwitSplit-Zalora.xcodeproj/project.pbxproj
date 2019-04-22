@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		456BBF914BA8B2BF6303A41F /* Pods_TwitSplit_ZaloraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D0AEDE2A88EBE72C4FF811 /* Pods_TwitSplit_ZaloraUITests.framework */; };
 		4A17264822677414009BF28C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A17264722677414009BF28C /* AppDelegate.swift */; };
-		4A17264A22677414009BF28C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A17264922677414009BF28C /* ViewController.swift */; };
 		4A17264D22677414009BF28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A17264B22677414009BF28C /* Main.storyboard */; };
 		4A17264F22677416009BF28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A17264E22677416009BF28C /* Assets.xcassets */; };
 		4A17265222677416009BF28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A17265022677416009BF28C /* LaunchScreen.storyboard */; };
@@ -52,7 +51,6 @@
 		41C0473F61D89FA73157EE4E /* Pods-TwitSplit-ZaloraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitSplit-ZaloraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitSplit-ZaloraTests/Pods-TwitSplit-ZaloraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A17264422677414009BF28C /* TwitSplit-Zalora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TwitSplit-Zalora.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A17264722677414009BF28C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A17264922677414009BF28C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A17264C22677414009BF28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A17264E22677416009BF28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A17265122677416009BF28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -135,10 +133,8 @@
 				4AE270EA2267AC48006AEDBF /* CustomViews */,
 				4AE270E92267AC35006AEDBF /* Storyboards */,
 				4AE270E82267AC29006AEDBF /* Sections */,
-				4AE270E72267AC1E006AEDBF /* Extensions */,
 				4A1726752267741D009BF28C /* Utils */,
 				4A17264722677414009BF28C /* AppDelegate.swift */,
-				4A17264922677414009BF28C /* ViewController.swift */,
 				4A17264E22677416009BF28C /* Assets.xcassets */,
 				4A17265322677416009BF28C /* Info.plist */,
 			);
@@ -170,13 +166,6 @@
 				4A172678226775B0009BF28C /* TwitSplitStrategy.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		4AE270E72267AC1E006AEDBF /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4AE270E82267AC29006AEDBF /* Sections */ = {
@@ -545,7 +534,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A17264A22677414009BF28C /* ViewController.swift in Sources */,
 				4AC3893A2268B39C00E0ABEB /* TimelinesViewController.swift in Sources */,
 				4AC3893422688E5500E0ABEB /* MessageModel.swift in Sources */,
 				4AC3893822689CF800E0ABEB /* PostMessagesViewController.swift in Sources */,

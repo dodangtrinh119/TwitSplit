@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class TimelinesViewController: UIViewController {
+class TimelinesViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet var tableView: UITableView!
     
@@ -20,26 +20,35 @@ class TimelinesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "test", style: .done, target: self, action: #selector(addTapped))
-        tableView.estimatedRowHeight = 400
-        self.tableView.register(UINib(nibName:"PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
+        setupView()
         setupViewModel()
     }
     
-    func setupViewModel() {
-        //timelinesViewModel.setData()
+    fileprivate func setupViewModel() {
         timelinesViewModel.postDataSource.asObservable().bind(to: tableView.rx.items(cellIdentifier: "PostTableViewCell")) { (index, model, cell) in
             if let cell = cell as? PostTableViewCell {
                 //setup cell
                 cell.setData(model: model)
-                print("Dang trinh test ",index)
             }
             }.disposed(by: disposeBag)
     }
     
+    fileprivate func setupView() {
+        navigationItem.title = "Twit Split"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New Post", style: .done, target: self, action: #selector(addTapped))
+        
+        self.tableView.register(UINib(nibName:"PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
     @objc func addTapped() {
         self.performSegue(withIdentifier: "showAddMessage", sender: nil)
-        //timelinesViewModel.postDataSource.value.append(MessageModel(usr: "Dang Trinh", mes: "ADDED"))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

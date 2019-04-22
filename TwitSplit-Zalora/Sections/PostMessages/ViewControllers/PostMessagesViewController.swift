@@ -48,16 +48,16 @@ class PostMessageViewController: UIViewController {
             }
             else {
                 self?.delegate.afterSplitSuccess(result: result.result, username: (self?.viewModel.username.value)!)
-                self?.dismiss(animated: true, completion: nil)
-                print(result.result)
+                self?.navigationController?.popViewController(animated: true)
             }
         }).disposed(by: disposeBag)
     }
 
     func setupView() {
-        messageTextField.text = "Placeholder"
-        messageTextField.textColor = UIColor.lightGray
+        navigationItem.title = "New Post"
         self.navigationItem.rightBarButtonItem = doneButton
+        messageTextField.text = "Enter your message here"
+        messageTextField.textColor = UIColor.lightGray
     }
     
     
@@ -73,7 +73,7 @@ extension PostMessageViewController: UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
-            textView.text = "Placeholder"
+            textView.text = "Enter your message here"
             textView.textColor = UIColor.lightGray
         }
     }

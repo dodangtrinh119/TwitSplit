@@ -13,8 +13,8 @@ import RxSwift
 class PostMessageViewModel {
     
     private let disposeBag = DisposeBag()
-    var username = Variable<String>("")
-    var message = Variable<String>("")
+    var username = BehaviorRelay<String>(value: "")
+    var message = BehaviorRelay<String>(value: "")
     let isValid: Observable<Bool>
     var splitResult = PublishSubject<TwitSplitResult>()
     
@@ -35,7 +35,6 @@ class PostMessageViewModel {
     }
     
     func splitMessage() {
-        print("ABCDDDD")
         splitResult.onNext(splitter.splitMessage(message: message.value, limit: LIMIT_CHAR_IN_WORD))
         print(splitResult)
     }
